@@ -59,8 +59,8 @@ func main() {
 						"Effect":    "Deny",
 						"Principal": "Allow",
 						"Action": []interface{}{
-							"s3:GetObject",
-							"s3:PutObject",
+							"s3:GetObject"
+							
 						},
 						"Resource": []interface{}{
 							pulumi.Sprintf("arn:aws:s3:::%s/*", siteBucket.ID()), // policy refers to bucket name explicitly
