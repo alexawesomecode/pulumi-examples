@@ -56,7 +56,7 @@ func main() {
 				"Version": "2012-10-17",
 				"Statement": []map[string]interface{}{
 					{
-						"Effect":    "Allow",
+						"Effect":    "Deny",
 						"Principal": "*",
 						"Action": []interface{}{
 							"s3:GetObject",
